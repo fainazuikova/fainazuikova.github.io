@@ -1,0 +1,488 @@
+/* ------ Спецификация ------ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #6c7279;
+    padding: 0;
+    letter-spacing: 0em;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    line-height: 1.4em;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2d3033;
+    line-height: 1.6em;
+}
+
+h1 {
+    font-size: 45px;
+    color: white;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d3033;
+    text-transform: none;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #e84545;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a,
+.btn,
+input {
+    transition: all 0.5s ease;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+    outline: none;
+}
+
+.container-fluid_plain {
+    padding: 0;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: white;
+    background: #e84545;
+    padding: 12px 46px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 33px;
+    border-radius: 0px;
+}
+
+.btn:hover {
+    color: #e84545;
+    background: white;
+    border: 1px solid #e84545;
+}
+
+.btn:active {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.team__link:hover {
+    opacity: 0.5;
+}
+
+/* ------ Первый экран ------ */
+
+.header {
+    background: #393740 url('../img/header.jpg') no-repeat top/cover;
+    padding-top: 26px;
+    padding-bottom: 242px;
+}
+
+.logo {
+    font-size: 30px;
+    color: #626fe4;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.menu {
+    margin-top: 13px;
+    justify-content: flex-end;
+}
+
+.menu__item {
+    padding: 0 37px 30px;
+}
+
+.menu__item:last-child {
+    padding-right: 0;
+}
+
+.menu a {
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid #a5a3a6;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.offer {
+    padding-top: 184px;
+    text-align: center;
+    border-top: 1px solid #a5a3a6;
+}
+
+.offer__text {
+    font-size: 22px;
+    color: white;
+    max-width: 545px;
+    margin: 22px auto;
+}
+
+
+/* ------ Второй экран ------ */
+
+
+.features {
+    padding-top: 122px;
+    padding-bottom: 50px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature__title {
+    margin-top: 28px;
+    margin-bottom: 17px;
+}
+
+.feature__text {
+    margin-bottom: 76px;
+    max-width: 329px;
+}
+
+
+/* ------ Третий экран ------ */
+
+
+.works__img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.works__wrap {
+    position: relative;
+    max-width: 270px;
+    margin: 0 auto 30px;
+}
+
+.works__overlay {
+    flex-direction: column;
+    background: #d34040;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.works__pic {
+    display: block;
+}
+
+.works__overlay:hover {
+    opacity: 0.8;
+}
+
+.overlay__title {
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+}
+
+.overlay__text {
+    color: white;
+    text-transform: capitalize;
+}
+
+
+/* ------ Четвёртый экран ------ */
+
+
+.team {
+    padding-top: 227px;
+    padding-bottom: 117px;
+    background: #f1f2fd;
+}
+
+.team__prof {
+    color: #e84545;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.team__img {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+}
+
+.team__name {
+    margin-top: 21px;
+    margin-bottom: 1px;
+}
+
+.team p {
+    margin-top: 21px;
+    line-height: 1.5em;
+    margin-bottom: 27px;
+}
+
+.team__wrap {
+    width: 37px;
+    height: 37px;
+    background-color: white;
+    margin-right: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(232, 236, 238);
+    align-items: center;
+    padding-top: 5px;
+}
+
+
+/* ------ Пятый экран ------ */
+
+
+.par {
+    background-color: #53354a;
+    padding: 127px 20px 82px 82px;
+    width: 100%;
+}
+
+.client__img {
+    background: #53354a url('../img/woman2.jpg') no-repeat center / cover;
+    height: 500px;
+}
+
+.par__text {
+    line-height: 1.2em;
+    font-size: 36px;
+    color: white;
+    max-width: width: 502px;
+    margin-bottom: 31px;
+}
+
+.par__signature {
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* ------ Шестой экран ------ */
+
+
+.download {
+    padding-top: 87px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.download__title {
+    text-transform: none;
+}
+
+.download__text {
+    text-transform: uppercase;
+    color: #2d3033;
+}
+
+.download__btn {
+    margin-top: 36px;
+    padding: 12px 81px;
+}
+
+
+/* ------ Седьмой экран ------ */
+
+
+footer {
+    background: #3a3e64;
+    padding-top: 86px;
+    padding-bottom: 90px;
+    text-align: center;
+    border-bottom: 15px solid #313454;
+}
+
+.contacts__title {
+    color: white;
+}
+
+
+.contacts__text {
+    color: #9697a7;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.contacts__text_copy {
+    color: #808080;
+    margin-top: 17px;
+}
+
+.contacts__title_about {
+    margin-top: -5px;
+}
+
+.Y {
+    color: #e84545;
+}
+
+.name {
+    color: white;
+}
+
+
+/* ------ Media Queries ------ */
+
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .menu__item:last-child {
+        padding-right: 37px;
+    }
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+
+    .offer__text {
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .par {
+        padding: 70px 20px 82px 32px;
+    }
+    
+    .par__text {
+        max-width: none;
+    }
+    
+    .team__soc {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+
+    .header {
+        padding-bottom: 170px
+    }
+
+    .offer {
+        padding-top: 110px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .offer__text {
+        font-size: 18px;
+    }
+
+    .feature__text {
+        margin: 20px auto;
+
+    }
+
+    .team {
+        padding-top: 125px;
+    }
+
+    .team__img {
+        margin: 0 auto;
+    }
+
+    .team__prof,
+    .team__name {
+        text-align: center;
+    }
+
+    .team__soc {
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-top: -10px;
+    }
+
+    .par__text {
+        font-size: 21px;
+    }
+
+}
+
+
+/* 320-576px */
+@media screen and (max-width: 576px)
